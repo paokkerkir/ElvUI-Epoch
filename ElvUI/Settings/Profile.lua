@@ -303,6 +303,11 @@ P.nameplates = {
 	motionType = "OVERLAP",
 
 	lowHealthThreshold = 0.4,
+	executeIndicator = {
+		enable = false,
+		threshold = 0.2,
+		color = {r = 1, g = 0.2, b = 0.2, a = 0.9}
+	},
 
 	showFriendlyCombat = "DISABLED",
 	showEnemyCombat = "DISABLED",
@@ -1385,6 +1390,12 @@ P.unitframe = {
 			width = 270,
 			height = 54,
 			lowmana = 30,
+                        buffIndicator = {
+                                enable = true,
+                                size = 8,
+                                fontSize = 10,
+                                profileSpecific = false
+                        },
 			healPrediction = {
 				enable = true
 			},
@@ -4150,6 +4161,7 @@ P.actionbar = {
 	movementModifier = "SHIFT",
 	transparentBackdrops = false,
 	transparentButtons = false,
+	hideButtonBackdrops = false,
 	globalFadeAlpha = 0,
 	lockActionBars = true,
 	rightClickSelfCast = false,
